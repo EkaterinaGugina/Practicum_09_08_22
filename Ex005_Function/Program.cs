@@ -12,12 +12,13 @@ void FillArray(int[] collection)
     {
         collection[index] = new Random().Next(1, 10);
         index++;
-    }  
+    } 
 }
 
 //Метод Вывод массива на экран
 void PrintArray(int[] col)
 {
+    Console.Clear;
     int count = col.Length;
     int position = 0;
     while (position < count)
@@ -48,4 +49,6 @@ void IndexOf(int[] collection, int find)
     }
     return position;
 }
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Заполним массив. Введите элементы массива через Enter");
+FillArray(array);
+
