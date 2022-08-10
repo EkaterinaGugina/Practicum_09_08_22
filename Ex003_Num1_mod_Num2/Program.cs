@@ -10,5 +10,5 @@ if (number1 % number2 == 0)
     }
 else
     {
-    Console.Write($"Числа не кратны и остаток от деления {number1} на {number2} равен  "); 
+    Console.Write($"Числа не кратны, и остаток от деления {number1} на {number2} равен {number1 % number2}"); 
     }   
