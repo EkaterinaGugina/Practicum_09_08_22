@@ -1,14 +1,12 @@
-﻿// Программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-Console.WriteLine("Введите целое число, большее 1, и мы выведем все чётные числа от 1 до него");
+﻿// Программа, которая на вход принимает число (N), а на выходе пишет, кратно ли оно 7 и одновременно 23.
+Console.WriteLine("Введите целое число, и мы выведем кратно ли оно 7 и одновременно 23.");
 Console.Write("number =");
 int number = Convert.ToInt32(Console.ReadLine());
-int current = 2;
-while (current <= number)
+if ((number % 7 == 0) && (number % 23 == 0))
 {
-    Console.Write($"{current}  ");  
-    current+=2;
+    Console.WriteLine($"Число {number} кратно 7 и 23 одновременно.");
 }
-if (number <= 1)
+else 
 {
-    Console.Write("Исправьте введенное число согласно условию задачи!"); 
+    Console.WriteLine($"Число {number} им одновременно не кратно");
 }
