@@ -1,21 +1,18 @@
-﻿// Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-Console.WriteLine("Введите два целых числа, и мы выведем, какое из них больше");
-Console.Write("A =");
+﻿// Программа, которая на вход принимает два числа и проверяет, является ли одно квадратом другого.
+Console.WriteLine("Введите два целых числа, и мы выведем, является ли одно из них квадратом другого");
+Console.Write("a =");
 int numberA = Convert.ToInt32(Console.ReadLine());
-Console.Write("B =");
+Console.Write("b =");
 int numberB = Convert.ToInt32(Console.ReadLine());
-if (numberA > numberB)
+if (numberA == numberB * numberB)
     {
-     Console.WriteLine($"{numberA} > {numberB}");
+     Console.WriteLine($"{numberA} квадрат {numberB}");
+    }
+else if (numberB == numberA * numberA)
+    {
+     Console.WriteLine($"{numberB} квадрат {numberA}");
     }
 else
     {
-        if (numberA == numberB)
-        {
-        Console.WriteLine($"{numberA} = {numberB}");
-        }
-        else 
-        {
-        Console.WriteLine($"{numberA} < {numberB}");
-        }
-    }   
+     Console.WriteLine("Среди этих чисел нет квадрата другого");
+    }
